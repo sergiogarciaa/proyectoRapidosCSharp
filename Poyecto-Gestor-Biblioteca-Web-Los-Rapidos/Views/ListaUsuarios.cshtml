@@ -1,0 +1,25 @@
+﻿@using DAL.Modelos;
+@model List<Usuarios>
+
+<h2>Lista de Usuarios</h2>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <!-- Otros encabezados de columnas si es necesario -->
+    </tr>
+    @foreach (var usuario in Model)
+    {
+        <tr>
+
+            <td>@usuario.id_usuario</td>
+            <td>@usuario.nombre_usuario</td>
+
+            <td>@Html.ActionLink("Editar", "Modificar",new { userId = usuario.id_usuario })</td>
+
+            <!-- Otros campos si es necesario -->
+        </tr>
+
+    }
+</table>

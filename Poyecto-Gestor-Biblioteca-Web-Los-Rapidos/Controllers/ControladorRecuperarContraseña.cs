@@ -55,6 +55,7 @@ namespace Poyecto_Gestor_Biblioteca_Web_Los_Rapidos.Controllers
         public bool VerificarCorreoExistente(string email_usuario)
         {
             // Verificar si existe el correo en la base de datos
+            
             return _dbContext.Usuarios.Any(u => u.email_usuario == email_usuario);
         }
 

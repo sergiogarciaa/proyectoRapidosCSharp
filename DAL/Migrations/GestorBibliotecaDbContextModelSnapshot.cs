@@ -69,7 +69,7 @@ namespace DAL.Migrations
                             clave_usuario = "ac9689e2272427085e35b9d3e3e8bed88cb3434828b43b86fc0596cad4c6e270",
                             dni_usuario = "1",
                             email_usuario = "admin@gmail.com",
-                            fch_alta_usuario = new DateTime(2023, 11, 23, 12, 43, 58, 924, DateTimeKind.Utc).AddTicks(8618),
+                            fch_alta_usuario = new DateTime(2023, 11, 30, 12, 4, 52, 485, DateTimeKind.Utc).AddTicks(2033),
                             nombre_usuario = "ADMIN",
                             tlf_usuario = "1"
                         });

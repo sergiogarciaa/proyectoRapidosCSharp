@@ -1,0 +1,32 @@
+﻿@model DAL.Modelos.Usuarios
+
+<h2>Editar Usuario</h2>
+
+<form asp-action="EditarUsuario" method="post">
+    <div class="form-group">
+        <label asp-for="id_usuario" hidden></label>
+        <input asp-for="id_usuario" hidden class="form-control" />
+        <span asp-validation-for="id_usuario" class="text-danger"></span>
+        <label asp-for="nombre_usuario"></label>
+        <input asp-for="nombre_usuario" class="form-control" />
+        <span asp-validation-for="nombre_usuario" class="text-danger"></span>
+        <label asp-for="apellidos_usuario"></label>
+        <input asp-for="apellidos_usuario" class="form-control" />
+        <span asp-validation-for="apellidos_usuario" class="text-danger"></span>
+        <label asp-for="dni_usuario"></label>
+        <input asp-for="dni_usuario" class="form-control" />
+        <span asp-validation-for="dni_usuario" class="text-danger"></span>
+        <label asp-for="tlf_usuario"></label>
+        <input asp-for="tlf_usuario" class="form-control" />
+        <span asp-validation-for="tlf_usuario" class="text-danger"></span>
+        <label asp-for="email_usuario"></label>
+        <input asp-for="email_usuario" class="form-control" />
+        <span asp-validation-for="email_usuario" class="text-danger"></span>
+        <label asp-for="clave_usuario"></label>
+        <input asp-for="clave_usuario" class="form-control" />
+        <span asp-validation-for="clave_usuario" class="text-danger"></span>
+    </div>
+    <!-- Agrega más campos según sea necesario -->
+
+    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+</form>
